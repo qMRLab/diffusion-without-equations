@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diffusion Without Equations, Part 3 | qMRLab</title>
+  <meta name="description" content="Results of a survey of 155 diffusion MRI researchers on the field's biggest problems and its future: biophysical models, clinical translation, and advanced technology.">
+  <meta property="og:title" content="Diffusion Without Equations, Part 3">
+  <meta property="og:image" content="https://qmrlab.org/diffusion-without-equations/assets/img/part3-hero.png">
+  <link rel="icon" href="../assets/img/qmrlab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../"><img src="../assets/img/qmrlab-icon.png" alt=""><span>Diffusion Without Equations<small>a qMRLab series</small></span></a>
+    <nav class="site-nav" aria-label="Series">
+      <a href="../part-1/">Part 1</a>
+      <a href="../part-2/">Part 2</a>
+      <a href="../part-3/" aria-current="page">Part 3</a>
+      <a href="../course/">Course</a>
+      <a href="https://qmrlab.org">qmrlab.org</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <header class="post-header">
+    <p class="kicker">Diffusion Without Equations &middot; Part 3</p>
+    <h1>The future of diffusion MRI, according to the community</h1>
+    <p class="meta">Originally published March 20, 2018 on ISMRM's <em>MR Pulse</em> blog</p>
+  </header>
+
+  <article class="prose">
+    <p>To wrap up our <a href="../">series</a> on <em>Diffusion Without Equations</em>, we asked the community about the field’s current needs, as well as the future of diffusion MRI. You can find the original survey questions <a href="../survey/">here</a>.</p>
+
+    <p>Of the 155 participants, 26.5% had a biomedical engineering background, 22.6% were from computer science, 25.8% physics, and the rest came from biology, medicine, psychology, and other disciplines. Here is what they had to say!</p>
+
+    <p>Though diffusion MRI (dMRI) has evolved significantly since the seminal work by Stejskal and Tanner (as discussed in <a href="../part-1/">Part 1</a> of the series), it is clear that the community believes that the field is still growing. When asked whether the field of dMRI has peaked, 81.9% of the responders answered that the future is promising and dMRI has not reached its peak yet. Only 2.58% answered that diffusion MRI has already peaked, while 15.5% believe the field is currently at its peak.</p>
+
+    <p>There is a larger debate, however, on what the biggest problem in dMRI is. Figure 1 highlights the responses. Most participants (45.8%) chose “insufficient understanding of biophysical origins of the diffusion signal”, and 21.29% responded with “reproducibility between scanners/platforms”. The remaining responses referred to a disconnect in the field, with 20% favoring “disconnect between researchers and clinicians”, and 12.90% emphasizing the “disconnect between MRI researchers and life sciences”.</p>
+
+    <figure>
+      <img src="../assets/img/part3-fig1-biggest-problem.png" alt="Bar chart of survey responses: insufficient understanding of biophysical origins of the diffusion signal 45.81%, reproducibility between vendors/platforms 21.29%, disconnect between MRI researchers and clinicians 20.00%, disconnect between MRI researchers and life sciences 12.90%" width="838" height="572" loading="lazy">
+      <figcaption><b>Figure 1.</b> “What do you think is the biggest problem in diffusion MRI research?”</figcaption>
+    </figure>
+
+    <p>As for what the focus of dMRI should be in research methodology (Figure 2), the results were consistent with the previous question. 34.19% chose “building adequate tissue models”, while “constructing platforms for sharing data and analysis tools” and “pilot studies for clinical translation” were close runners-up.</p>
+
+    <figure>
+      <img src="../assets/img/part3-fig2-methodology.png" alt="Bar chart of survey responses: building adequate tissue models 34.19%, constructing platforms for sharing data and analysis tools 20.00%, pilot studies for clinical translation 19.35%, validation in animal models 13.55%, building phantoms and performing calibration 12.90%" width="880" height="586" loading="lazy">
+      <figcaption><b>Figure 2.</b> “What do you think should be emphasized more in research methodology?”</figcaption>
+    </figure>
+
+    <p>How does all of this translate to the clinic? Dmitry Novikov succinctly states, “The dMRI future is bright – which is equivalent to saying that we as a community still have a long way to go.” Quantitative diffusion in the clinic still has to overcome several problems (Figure 3), with confusion in interpretation (36.2%), reliability in results (30.9%) and long acquisition times (18.7%) being the biggest ones.</p>
+
+    <figure class="barlist" role="img" aria-label="Biggest problem for quantitative diffusion in the clinic: confusion in interpretation 36.2%, reliability in results 30.9%, long acquisition times 18.7%, remaining two options combined 14.2%">
+      <div class="bar-row"><span class="bar-label">Confusion in interpretation</span><span class="bar-track"><span class="bar" style="width:90.5%"></span></span><span class="bar-value">36.2%</span></div>
+      <div class="bar-row"><span class="bar-label">Reliability in results</span><span class="bar-track"><span class="bar" style="width:77.2%"></span></span><span class="bar-value">30.9%</span></div>
+      <div class="bar-row"><span class="bar-label">Long acquisition times</span><span class="bar-track"><span class="bar" style="width:46.8%"></span></span><span class="bar-value">18.7%</span></div>
+      <div class="bar-row muted"><span class="bar-label">Too much pre-processing and reliability in tracking algorithms (combined)</span><span class="bar-track"><span class="bar" style="width:35.5%"></span></span><span class="bar-value">14.2%</span></div>
+      <figcaption><b>Figure 3.</b> “What do you think is the biggest problem for quantitative diffusion in the clinic?” Share of 155 respondents. Redrawn from the figures quoted in the text, because the chart image in the original post was a duplicate of Figure 1. The two smallest options were not reported separately, so they are shown combined.</figcaption>
+    </figure>
+
+    <p>From the open comments (listed at the end of the feature), there seem to be three overarching themes that people keep coming back to: 1) the development of biophysical models, 2) translation of techniques to the clinic, and 3) the role of advanced technology.</p>
+
+    <h2>Development of biophysical models</h2>
+
+    <p>In the past decade or so, there has been a focus on the development of biophysical models (NODDI, CHARMED, DBSI, WMTI, etc.) to characterize microstructural properties such as axonal volume fractions. Muhamed Barakovic states, “dMRI is so popular because it has enormous potential to probe tissue microstructure.” While these models have demonstrated promise, the community still aims for specificity rather than sensitivity, as phrased by Itamar Ronen: “The future of diffusion MRI will highly depend on its ability to resolve some of its most burning problems and one of them is that of compartmental specificity.” However, despite this challenge, the community still remains hopeful. One person comments anonymously, “Diffusion MRI will be at his peak when we will find a model really close to the reality of the microstructure.” Dmitry Novikov also agrees, believing that once we “understand the biophysical mechanisms of the signal at the cellular level […] amazing unforeseen applications will inevitably come.”</p>
+
+    <h2>Translation to the clinic</h2>
+
+    <p>While adoption in the clinic is one of the ultimate goals for any method, several people had thoughts on the current barriers preventing dMRI from making this step. One person anonymously states, “The biggest problem I encountered, working with diffusion MRI of the brain, is the lack of trust from clinicians in the results provided by the analysis of this kind of data. Some researchers stick to the classical DTI model and do not accept further advances in image processing, such as tractography and connectomics results, some others are very much concerned by the known limitations of DWI processing and analysis, often refusing to accept the interpretation of related findings.”</p>
+
+    <p>While some believe this lack of trust from clinicians may stem from “clinicians’ hatred of math”, Thijs Dhollander believes that “we need to start exploring how we can translate more than just ADC and simplistic tractography to the clinic.” To do so, the community feels that “actual validation on the neuronal tissue in several disease conditions is needed for current and future dMRI studies”, as stated by Masaaki Hori. Along these lines, one person believes that a major research focus should be on showing that some of the existing methods already have potential, stating “If we do not do so, we will never convince clinicians of integrating diffusion MRI tools in their clinical routine.” It is hard to say where clinical diffusion will be in the future, but most of the community share the same hope as Simon Lévy: “I’m not sure where diffusion MRI will be in 10 years but my guess (and wish) is that one (maybe two) advanced microstructure/macrostructure-specific and sensitive technique will have taken over the others in clinics.”</p>
+
+    <h2>Role of advanced technology</h2>
+
+    <p>Lastly, some of the responders discussed the role of advanced technology in the future of diffusion MRI. Tim Dyrby states: “Diffusion is popular because the physical image contrast is ‘easy’ to understand but its complexity [spans] many levels like a fractal, from theory, computer science, engineering to clinic. Thinking as a single modality, diffusion will not be the sole solution. The community must continue breaking down barriers and work multimodal and multi disciplinary.” JJ Wang believes that deep learning may play a large role in the future of diffusion MRI: “With deep learning, we might be able to use diffusion MRI to diagnose diseases which previously are based on clinical judgement (such as neurodegenerative disease). This might further change the process of clinical trials, speed up the development of new drugs.”</p>
+
+    <h2>Outlook</h2>
+
+    <p>Many people feel that in 10 years diffusion will be standardized, validated, and adopted by hospitals. In the meantime, we should work on bringing together the connectivity and microstructure “camps”, as one anonymous responder suggested, and do our best to prove the value of diffusion imaging to the clinicians. Despite the challenges the field is facing, the overall sentiment in the survey was optimistic, as nicely summarized by one person stating: “There is beauty in this!”. This sentiment is shared by Valerij Kiselev, who sees diffusion imaging as “real physics, an adventure of knowledge, never boring.” Let’s keep the excitement going!</p>
+
+    <p><strong>We thank everyone for their feedback! Below is a selection of comments from the survey, published with permission.</strong></p>
+
+    <details class="collapse">
+      <summary>Read the survey comments</summary>
+      <div class="collapse-body">
+
+        <div class="comment-group">
+          <h3>Understanding biophysical origins of the diffusion signal / Building adequate tissue models</h3>
+          <blockquote class="comment">I think that MRI diffusion has a bright future of understanding microbiological structures and clinical procedures (ie: neuronal connections of the brain). I believe that in 10 years we will be able to model and visualize most microstructures almost perfectly thanks to diffusion MRI. <cite>Micka Kaneza</cite></blockquote>
+          <blockquote class="comment">dMRI in 10 years depends only on the quality of the work that we are doing now. dMRI is so popular because it has enormous potential to probe tissue microstructure. <cite>Muhamed Barakovic</cite></blockquote>
+          <blockquote class="comment">Diffusion MRI has the potentiality of providing unique and specific information of tissue’s microstructural changes. This technique is nowadays so popular because it can be easily used to detect structural changes in the whole brain and which cannot be resolved using conventional T1 and T2-weighted imaging. In 10 years time, I hope that the scientific community will have a better understanding of the biophysical relevance of diffusion MRI and its do’s and dont’s. I expect that in 10 years, more specific diffusion based measures will start being translated to clinical practice. <cite>Rafael Henriques</cite></blockquote>
+          <blockquote class="comment">Diffusion MRI shines because it offers the most immediate link, as complicated as it may be, with tissue structure on a range of meaningful spatial scales. This is something that is unprecedented in biomedical imaging in general and in MRI in particular, and offers much joy and hope to a hugely diverse bunch of research-addicts – physicists, physical chemists, mathematicians, clinicians, neuroscientists… you name it. So there’s enough for everyone, and will be much more. The future of diffusion MRI will highly depend on its ability to resolve some of its most burning problems and one of them is that of compartmental specificity. My hope is that in 10 years we not only refine our modeling strategies to tease more robustly and faithfully compartment-specific information from diffusion MRI, but that we’ll have the technology to incorporate diffusion MRI of other spin species, for example brain metabolites and sodium, to complement the exquisite information we obtain from diffusion MRI with additional, more specific information from diffusion of other species, to create a more meaningful link between diffusion MRI and the underlying tissue structure. This will require ever stronger gradients, perhaps higher field strength, sophisticated acquisition techniques and more. For that, I hope, 10 years are enough! Best wishes to all, and thanks for offering the opportunity to vent on this blog… <cite>Itamar Ronen</cite></blockquote>
+          <blockquote class="comment">I think that diffusion MRI is so popular because of the intuitive and “relatively” easy biophysical interpretation people can have nowadays. This interpretation is really close to the tissue microstructure, bringing together biologists, physicians, scientists and physicists. And this is also what attracts me to the field. I’m not sure where diffusion MRI will be in 10 years but my guess (and wish) is that one (maybe two) advanced microstructure/macrostructure-specific and sensitive technique such as tractography will have taken over the others in clinics, or that DTI will have improved its repeatability and reproducibility across vendors and sites. Many thanks for leading this community! Best wishes, <cite>Simon Lévy</cite></blockquote>
+          <blockquote class="comment">Diffusion MRI is obviously sensitive and potentially also specific to tissue properties that other MRI modalities don’t have access to. But if all of the research efforts poured into this domain are to ever be worth it, we need to start exploring how we can translate more than just ADC and simplistic tractography to the clinic. We’re at a point where we risk losing our credibility if we don’t allow ourselves to move beyond just the fundamentals. And of course, we should keep on working on those fundamentals just as well. <cite>Thijs Dhollander</cite></blockquote>
+          <blockquote class="comment">The dMRI future is bright – which is equivalent to saying that we as a community still have a long way to go. dMRI has presented us with a fundamental challenge: to understand the biophysical mechanisms of the signal at the cellular level, and to translate this insight into scientifically educated choices for disease markers. We have not truly addressed this yet, which means that we haven’t exhausted most of the dMRI potential. This makes me very optimistic about our future – but with a caveat. It would be useful to learn from what has worked and what hasn’t, and prioritize depth and insight into tissue biophysics to brute-force data mining. We need to strive for uncovering a little rather than covering a lot. Making real progress would entail appreciating the fundamental scientific aspect of dMRI in addition to its engineering component, with theory and experiment informing each other, much like what has happened in more mature fields such as modern physics and chemistry over the past century. Amazing unforeseen applications will inevitably come. <cite>Dmitry S. Novikov</cite></blockquote>
+          <blockquote class="comment">Diffusion MRI started to fascinate me more than 10 years ago because of the potential to probe microstructure non-invasively. While the non-invasiveness makes it unique and ultimately very groundbreaking, this makes it also very challenging and creates the need for better understanding and validation. I would hope that in 10 years, the role of microstructural imaging has found a way into clinic. <cite>Els Fieremans</cite></blockquote>
+        </div>
+
+        <div class="comment-group">
+          <h3>Other applications (than neuro)</h3>
+          <blockquote class="comment">Diffusion and IVIM MRI, as a biomarker to evaluate tissue microstructure and perfusion without the need of contrast agents, will gain further momentum especially in the field of oncology in the clinical setting. Diffusion MR study group might pay more attention to this point. <cite>Mami Iima</cite></blockquote>
+          <blockquote class="comment">Applications of DWI outside the brain are in their infancy. Even this survey is neuro-focused, as is the diffusion study group. Probably not polite to suggest a reason for this bias. <cite>Roger Bourne</cite></blockquote>
+        </div>
+
+        <div class="comment-group">
+          <h3>Multi-modality / Deep learning</h3>
+          <blockquote class="comment">It provides a possible non-invasive probe into the structural feature of my interest. Diffusion is popular because the physical image contrast is ‘easy’ to understand but its complexity spans many levels like a fractal, from theory, computer science, engineering to clinic. Thinking as a single modality, diffusion will not be the sole solution. The community must continue breaking down barriers and work multimodal and multi disciplinary. <cite>Tim Dyrby</cite></blockquote>
+          <blockquote class="comment">It is easy to use and produce results with high sensitivity, almost comparable to PET. With deep learning, we might be able to use diffusion MRI to diagnose diseases which previously were based on clinical judgement (such as neurodegenerative disease). This might further change the process of clinical trials, speed up the development of new drugs. <cite>JJ Wang</cite></blockquote>
+          <blockquote class="comment">Diffusion MRI is the perfect combination of beautiful physics, maths and biology. What else would anyone want? On another note, I think multidimensional diffusion MRI is one of the most promising approaches for the future of diffusion MRI! <cite>Alexis Reymbaut</cite></blockquote>
+        </div>
+
+        <div class="comment-group">
+          <h3>Study in pathologies</h3>
+          <blockquote class="comment">Many advanced diffusion MR imaging (dMRI) data acquisition, analysis and models have been introduced. But there is a discrepancy between the disease condition and the models, based on normal brain. Therefore, actual validation on the neuronal tissue in several disease condition is needed for current and future dMRI studies, as well as more dedicated methodology for dMRI. Sincerely, <cite>Masaaki Hori</cite></blockquote>
+          <blockquote class="comment">What attracts me: It’s real physics, an adventure of knowledge, never boring. Why so popular: It promises something like in-vivo histology (!!!). What will be in 10 years, I think not only in the brain. <cite>Valerij Kiselev</cite></blockquote>
+          <blockquote class="comment">Diffusion is popular because the data obtained provides insight into brain structure non-invasively. In 10 years, I hope we have developed DWI to be a more routine tool so that we can focus on using the tool to study brain structure and function at higher resolution with greater and more reliable information content. <cite>Tom Mareci</cite></blockquote>
+        </div>
+
+      </div>
+    </details>
+  </article>
+
+  <nav class="series-nav" aria-label="Series navigation">
+    <a class="prev" href="../survey/"><small>Previous</small><span>Interlude: the community survey</span></a>
+    <a class="next" href="../course/"><small>Next</small><span>&hellip; and now for some equations</span></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>Originally published on ISMRM's <em>MR Pulse</em> blog, 2017–2018. Restored and maintained by <a href="https://qmrlab.org">qMRLab</a>.</p>
+    <p><a href="https://github.com/qMRLab/diffusion-without-equations">Source on GitHub</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,763 @@
+{
+ "809": {
+  "question": "In biological tissue, for a very short time scale (a few ms), the diffusion of the water molecules can be described as:",
+  "desc": "",
+  "hint": "",
+  "video": "https://youtu.be/wetaaYAa8bE?t=6m17s",
+  "answers": [
+   {
+    "text": "a) Isotropic and Gaussian ",
+    "correct": true
+   },
+   {
+    "text": "b) Anisotropic and Gaussian",
+    "correct": false
+   },
+   {
+    "text": "c) Isotropic and non-Gaussian",
+    "correct": false
+   },
+   {
+    "text": "d) Anisotropic and non-Gaussian",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "816": {
+  "question": "Which of the following statements is true about the diffusion of water molecules in the brain, over a timescale of roughly 50 ms?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=wetaaYAa8bE&feature=youtu.be&t=15m29s",
+  "answers": [
+   {
+    "text": "a) The diffusion is anisotropic, i.e., relatively fast parallel compared to perpendicular to the fibers, in the white matter",
+    "correct": false
+   },
+   {
+    "text": "b) The diffusion is isotropic in both gray and white matter",
+    "correct": false
+   },
+   {
+    "text": "c) The diffusion is relatively isotropic in the gray matter compared to the white matter",
+    "correct": false
+   },
+   {
+    "text": "a) and c) ",
+    "correct": true
+   },
+   {
+    "text": "None of the above",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "818": {
+  "question": "Which parameter should be changed to increase the diffusion length/displacement being probed in a diffusion MRI experiment?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=wetaaYAa8bE&feature=youtu.be&t=8m30s",
+  "answers": [
+   {
+    "text": "a) Echo Time (TE)",
+    "correct": false
+   },
+   {
+    "text": "b) Diffusion time (Delta)",
+    "correct": true
+   },
+   {
+    "text": "c) Gradient strength (G)",
+    "correct": false
+   },
+   {
+    "text": "d) None of the above",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "819": {
+  "question": "How will the log of the normalized diffusion weighted signal change if the diffusion sensitizing gradient strength is doubled?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=wetaaYAa8bE#t=08m31s",
+  "answers": [
+   {
+    "text": "a) It will increase by a factor of 2",
+    "correct": false
+   },
+   {
+    "text": "b) It will decrease by a factor of 4",
+    "correct": true
+   },
+   {
+    "text": "c) It will decrease by a factor of 2",
+    "correct": false
+   },
+   {
+    "text": "d) It will increase by a factor of 4",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "820": {
+  "question": "What is the relationship between the b-value and the resolution of the displacement distribution estimated with q-space techniques?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=wetaaYAa8bE&t=12m57s",
+  "answers": [
+   {
+    "text": "a) They are not related",
+    "correct": false
+   },
+   {
+    "text": "b) They are equal",
+    "correct": false
+   },
+   {
+    "text": "c) They are related by a simple mathematical equation",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "1090": {
+  "question": "What is the key effect that creates diffusion weighted MR contrast?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) Magnetization dephasing caused by discrepancies in the magnetic field seen by different spins",
+    "correct": true
+   },
+   {
+    "text": "b) Average signal phase induced by discrepancies in the radio frequency (RF) pulse series",
+    "correct": false
+   },
+   {
+    "text": "c) Average signal phase induced by the magnetic field gradients",
+    "correct": false
+   },
+   {
+    "text": "d) Magnetization dephasing caused by discrepancies in the relaxation time of different spins",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "859": {
+  "question": "Which of the following are advantages of single shot echo planar imaging (ss-EPI)?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=zmFQUBJWPRg&feature=youtu.be&t=28m15s",
+  "answers": [
+   {
+    "text": "a) It produces images with high resolution and few distortions  ",
+    "correct": false
+   },
+   {
+    "text": "b) It is fast ",
+    "correct": false
+   },
+   {
+    "text": "c) It freezes the motion ",
+    "correct": false
+   },
+   {
+    "text": "a) and b)",
+    "correct": false
+   },
+   {
+    "text": "a) and c)",
+    "correct": false
+   },
+   {
+    "text": "b) and c)",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "860": {
+  "question": "How can one significantly reduce the scan time in diffusion imaging without sacrificing the contrast or the volumetric coverage?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=zmFQUBJWPRg&feature=youtu.be&t=34m29s",
+  "answers": [
+   {
+    "text": "a) By doing single-slice excitation",
+    "correct": false
+   },
+   {
+    "text": "b) By doing simultaneous multi-slice excitation",
+    "correct": true
+   },
+   {
+    "text": "c) By reducing the gradient duration",
+    "correct": false
+   },
+   {
+    "text": "d) By reducing the diffusion time",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "856": {
+  "question": "How does the time between the second and the third 90° radiofequency (RF) pulses in a stimulated echo sequence affect the diffusion time dependent contrast?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=zmFQUBJWPRg&feature=youtu.be&t=14m29s",
+  "answers": [
+   {
+    "text": "a) The contrast decays as the time between the two 90° RF pulses increase ",
+    "correct": false
+   },
+   {
+    "text": "b) The contrast is being accumulated during the time between the two 90° RF pulses",
+    "correct": true
+   },
+   {
+    "text": "c) The contrast is not affected by the time between the two 90° RF pulses",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "858": {
+  "question": "Why is the steady state free precession (SSFP) sequence good for diffusion imaging of tissues with short T2?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=zmFQUBJWPRg&feature=youtu.be&t=21m49s",
+  "answers": [
+   {
+    "text": "a) Because of the short TR",
+    "correct": true
+   },
+   {
+    "text": "b) Because the duration of the diffusion gradients is short ",
+    "correct": false
+   },
+   {
+    "text": "c) Because of the inherent T1/T2 contrast of SSFP",
+    "correct": false
+   },
+   {
+    "text": "d) Because it does not require navigator echoes to image tissue in vivo ",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "844": {
+  "question": "How is the signal intensity drift in dMRI data best corrected?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=3z9IixVVGPQ&feature=youtu.be&t=3m30s",
+  "answers": [
+   {
+    "text": "a) By low-degree polynomial fitting of the b0 images",
+    "correct": false
+   },
+   {
+    "text": "b) By low-degree polynomial fitting of the b0 and the diffusion weighted images",
+    "correct": true
+   },
+   {
+    "text": "c) By high-degree polynomial fitting of the b0 images",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "846": {
+  "question": "When correcting for subject motion in diffusion MRI data, which processing step should be included to prevent a bias? ",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=3z9IixVVGPQ&feature=youtu.be&t=6m11s",
+  "answers": [
+   {
+    "text": "a) Rotation of the b-matrix",
+    "correct": true
+   },
+   {
+    "text": "b) Recalibration of the b-values",
+    "correct": false
+   },
+   {
+    "text": "c) Normalization of the non-diffusion-weighted signal intensity",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "847": {
+  "question": "How does the size of a tract passing close to the grey matter or the ventricles determine the extent of the confound caused by partial voluming, for statistics computed for the entire tract volume?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=3z9IixVVGPQ&feature=youtu.be&t=13m29s",
+  "answers": [
+   {
+    "text": "a) Bigger (in diameter) tracts are more affected",
+    "correct": false
+   },
+   {
+    "text": "b) Bigger (in diameter) tracts are less affected",
+    "correct": true
+   },
+   {
+    "text": "d) The size is irrelevant to the extent of this confound.",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "848": {
+  "question": "Which of the following could bias the Tract-based spatial statistics (TBSS) analysis?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=3z9IixVVGPQ&feature=youtu.be&t=17m20s",
+  "answers": [
+   {
+    "text": "a) The skeletonization by projection might miss the pathology",
+    "correct": false
+   },
+   {
+    "text": "b) Complex subvoxel fiber geometry",
+    "correct": false
+   },
+   {
+    "text": "c) Motion",
+    "correct": false
+   },
+   {
+    "text": "d) All of the above",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "849": {
+  "question": "How often does more than one fiber orientation occupy a white matter voxel in a diffusion MRI acquisition with 2 mm isotropic voxel size?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=HkdYYRI8dxE&feature=youtu.be&t=4m11s",
+  "answers": [
+   {
+    "text": "a) less than 10%",
+    "correct": false
+   },
+   {
+    "text": "b) 10%-50%",
+    "correct": false
+   },
+   {
+    "text": "c) 50%-90%",
+    "correct": true
+   },
+   {
+    "text": "e) more than 90%",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "850": {
+  "question": "What is the recommended step size and the order of interpolation for tractography?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=HkdYYRI8dxE&feature=youtu.be&t=9m49s",
+  "answers": [
+   {
+    "text": "a) 1/10 of the voxel grid and low order interpolation",
+    "correct": false
+   },
+   {
+    "text": "b) 1/2 of the voxel grid and low order interpolation",
+    "correct": false
+   },
+   {
+    "text": "c) 1/10 of the voxel grid and higher order interpolation",
+    "correct": true
+   },
+   {
+    "text": "d) 1/2 of the voxel grid and higher order interpolation",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "852": {
+  "question": "What is the main drawback of probabilistic tracking? ",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=HkdYYRI8dxE&feature=youtu.be&t=19m9s",
+  "answers": [
+   {
+    "text": "a) It produces more invalid connections in comparison to deterministic approaches",
+    "correct": true
+   },
+   {
+    "text": "b) It cannot track highly curved structures",
+    "correct": false
+   },
+   {
+    "text": "c) It is not reproducible ",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "853": {
+  "question": "Which structures will be over-represented if the tractography is seeded from every voxel in the brain white matter?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=HkdYYRI8dxE&feature=youtu.be&t=20m39s",
+  "answers": [
+   {
+    "text": "a) Large and short bundles",
+    "correct": false
+   },
+   {
+    "text": "b) Thin and long bundles ",
+    "correct": false
+   },
+   {
+    "text": "c) Thin and short bundles ",
+    "correct": false
+   },
+   {
+    "text": "d) Large and long bundles ",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "854": {
+  "question": "The seeding bias can be overcome by:",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=HkdYYRI8dxE&feature=youtu.be&t=21m32s",
+  "answers": [
+   {
+    "text": "a) Including anatomical priors",
+    "correct": false
+   },
+   {
+    "text": "b) Seeding from the grey-white matter interface ",
+    "correct": false
+   },
+   {
+    "text": "c) Particle filtering tractography",
+    "correct": false
+   },
+   {
+    "text": "All of the above",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "1116": {
+  "question": "Which of the following is a main advantage of the tissue models over the signal models?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) Tissue models have higher specificity",
+    "correct": true
+   },
+   {
+    "text": "b) Tissue models have higher sensitivity",
+    "correct": false
+   },
+   {
+    "text": "c) The tissue models are applicable to any type of tissue",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "1118": {
+  "question": "What is the maximum b-value that is suitable for use in signal models derived from the second order Taylor expansion of bD in healthy brain?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) 1500",
+    "correct": false
+   },
+   {
+    "text": "b) 2500",
+    "correct": true
+   },
+   {
+    "text": "c) 3500",
+    "correct": false
+   },
+   {
+    "text": "c) 4500",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "1119": {
+  "question": "Which of the following could be a consequence of fixed parallel diffusivity parameters in a multi-compartment model?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) Biased volume fractions.",
+    "correct": false
+   },
+   {
+    "text": "b) The intra-axonal compartment will appear less anisotropic than the extra-axonal compartment.",
+    "correct": false
+   },
+   {
+    "text": "c) Reduced specificity.",
+    "correct": false
+   },
+   {
+    "text": "a) and b)",
+    "correct": false
+   },
+   {
+    "text": "a) and c)",
+    "correct": true
+   },
+   {
+    "text": "b) and c)",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "1120": {
+  "question": "Which of the following has been suggested by the diffusion MRI literature?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) The parallel diffusivity in the intra-axonal compartment is less than the parallel diffusivity in the extra-axonal compartment.",
+    "correct": false
+   },
+   {
+    "text": "b) The parallel diffusivity in the intra-axonal compartment is greater than the parallel diffusivity in the extra-axonal compartment",
+    "correct": false
+   },
+   {
+    "text": "c) The parallel diffusivity in the intra-axonal compartment is equal to the parallel diffusivity in the extra-axonal compartment.",
+    "correct": false
+   },
+   {
+    "text": "d) All of the above",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "1121": {
+  "question": "What is a general feature of the two compartment models?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) The estimates of the parameters have two solutions",
+    "correct": true
+   },
+   {
+    "text": "b)  The estimates of the parameters have only one solution ",
+    "correct": false
+   },
+   {
+    "text": "c) The two compartment models are used only in grey matter",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "862": {
+  "question": "Which of the following metrics, derived from the reconstructed diffusion propagator, would be indicative of anisotropy?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=KN4Xr5_Yix0&feature=youtu.be&t=4m58s",
+  "answers": [
+   {
+    "text": "a) Return to origin probability",
+    "correct": false
+   },
+   {
+    "text": "b) Angular variance",
+    "correct": true
+   },
+   {
+    "text": "c) Mean displacement",
+    "correct": false
+   },
+   {
+    "text": "d) Radial variance",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "863": {
+  "question": "Which of these entities can characterize departure of the signal from a single Gaussian?",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "a) Diffusion kurtosis",
+    "correct": false
+   },
+   {
+    "text": "b) The diffusion tensor",
+    "correct": false
+   },
+   {
+    "text": "c) The high angular resolution ADC profile",
+    "correct": false
+   },
+   {
+    "text": "d) Anomalous diffusion parameters",
+    "correct": false
+   },
+   {
+    "text": "e) Bi-exponential models",
+    "correct": false
+   },
+   {
+    "text": "f) Mean diffusivity",
+    "correct": false
+   },
+   {
+    "text": "a) , c), d) and e)",
+    "correct": true
+   },
+   {
+    "text": "b) , c), d) and f)",
+    "correct": false
+   },
+   {
+    "text": "a) , c), e) and f)",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "864": {
+  "question": "Which of the following parameters are estimated by the AxCaliber model, but not by the Neurite Orientation Dispersion and Density Imaging (NODDI) model?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=KN4Xr5_Yix0&feature=youtu.be&t=17m59s",
+  "answers": [
+   {
+    "text": "a) It estimates the axon diameter",
+    "correct": false
+   },
+   {
+    "text": "b) It models the distribution of the myelin content wrapped around the axon",
+    "correct": false
+   },
+   {
+    "text": "c) It models the the hindered and the restricted diffusion compartments ",
+    "correct": false
+   },
+   {
+    "text": "d) It estimates the diffusivity",
+    "correct": false
+   },
+   {
+    "text": "e) It estimates the orientation dispersion ",
+    "correct": false
+   },
+   {
+    "text": "c) and d)",
+    "correct": false
+   },
+   {
+    "text": "a) and c)",
+    "correct": false
+   },
+   {
+    "text": "a) and  e)",
+    "correct": false
+   },
+   {
+    "text": "a) and d)",
+    "correct": true
+   }
+  ],
+  "explanations": []
+ },
+ "865": {
+  "question": "What assumption is made by some diffusion models to aid in distinguishing the intra-axonal from the extra-axonal space?",
+  "desc": "",
+  "hint": "",
+  "video": "https://www.youtube.com/watch?v=KN4Xr5_Yix0&feature=youtu.be&t=24m16s",
+  "answers": [
+   {
+    "text": "a) The axons are modelled as sticks with zero diffusivity perpendicular to the stick direction",
+    "correct": true
+   },
+   {
+    "text": "b) The axons are modelled as sticks with zero diffusivity parallel to the stick direction",
+    "correct": false
+   },
+   {
+    "text": "c) The anisotropy of the extra-axonal space is assumed to be higher than that of the intra-axonal space ",
+    "correct": false
+   },
+   {
+    "text": "d) The diffusivity perpendicular to the stick direction is assumed to be equal to that of cerebrospinal fluid (CSF)",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ },
+ "866": {
+  "question": "Rank the models in ascending order, with respect to their complexity (number of parameters):",
+  "desc": "",
+  "hint": "",
+  "video": "",
+  "answers": [
+   {
+    "text": "1. Diffusion Tensor Imaging (DTI); <br/>2. Neurite Orientation Dispersion and Density Imaging (NODDI); <br/>3. Bi-exponential; <br/>4. Diffusion Kurtosis Imaging (DKI); <br/>5. Apparent Diffusion Coefficient (ADC)",
+    "correct": false
+   },
+   {
+    "text": "1. Apparent Diffusion Coefficient (ADC);<br/>2. Bi-exponential; <br/>3. Neurite Orientation Dispersion and Density Imaging (NODDI); <br/>4. Diffusion Tensor Imaging (DTI); <br/>5. Diffusion Kurtosis Imaging (DKI)",
+    "correct": true
+   },
+   {
+    "text": "1. Bi-exponential;<br/>2. Apparent Diffusion Coefficient (ADC);<br/>3. Neurite Orientation Dispersion and Density Imaging (NODDI);<br/>4. Diffusion Tensor Imaging (DTI); <br/>5. Diffusion Kurtosis Imaging (DKI)",
+    "correct": false
+   },
+   {
+    "text": "1. Diffusion Kurtosis Imaging (DKI); <br/>2. Diffusion Tensor Imaging (DTI); <br/>3. Neurite Orientation Dispersion and Density Imaging (NODDI); <br/>4. Apparent Diffusion Coefficient (ADC);<br/>5. Bi-exponential",
+    "correct": false
+   },
+   {
+    "text": "1. Apparent Diffusion Coefficient (ADC);<br/>2. Neurite Orientation Dispersion and Density Imaging (NODDI); <br/>3. Bi-exponential; <br/>4. Diffusion Tensor Imaging (DTI); <br/>5. Diffusion Kurtosis Imaging (DKI)",
+    "correct": false
+   },
+   {
+    "text": "1. Apparent Diffusion Coefficient (ADC);<br/> 2. Neurite Orientation Dispersion and Density Imaging (NODDI); <br/>3. Diffusion Tensor Imaging (DTI);  <br/>4. Bi-exponential;  <br/>5. Diffusion Kurtosis Imaging (DKI)",
+    "correct": false
+   }
+  ],
+  "explanations": []
+ }
+}

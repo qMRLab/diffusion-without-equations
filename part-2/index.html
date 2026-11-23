@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diffusion Without Equations, Part 2 | qMRLab</title>
+  <meta name="description" content="An interactive track-runner analogy for how spin-echo and gradient-echo diffusion MRI sequences capture the diffusion process, and where the b-value comes from.">
+  <meta property="og:title" content="Diffusion Without Equations, Part 2: How do we capture the diffusion process?">
+  <meta property="og:image" content="https://qmrlab.org/diffusion-without-equations/assets/img/part2-hero.jpg">
+  <link rel="icon" href="../assets/img/qmrlab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../"><img src="../assets/img/qmrlab-icon.png" alt=""><span>Diffusion Without Equations<small>a qMRLab series</small></span></a>
+    <nav class="site-nav" aria-label="Series">
+      <a href="../part-1/">Part 1</a>
+      <a href="../part-2/" aria-current="page">Part 2</a>
+      <a href="../part-3/">Part 3</a>
+      <a href="../course/">Course</a>
+      <a href="https://qmrlab.org">qmrlab.org</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <header class="post-header">
+    <p class="kicker">Diffusion Without Equations &middot; Part 2</p>
+    <h1>How do we capture the diffusion process?</h1>
+    <p class="meta">Originally published June 6, 2017 on ISMRM's <em>MR Pulse</em> blog</p>
+  </header>
+
+  <figure class="hero"><img src="../assets/img/part2-hero.jpg" alt="Diffusion Without Equations Part 2 title graphic: a stick-figure runner on a lined track" width="1400" height="787"></figure>
+
+  <article class="prose">
+    <figure class="float-right">
+      <img src="../assets/img/part2-fig1-hahn-runners.jpg" alt="Physics Today cover illustrating Hahn's spin echo with runners on a track" width="760" height="1059">
+      <figcaption><b>Figure 1.</b> Hahn’s famous spin echo analogy on the cover of <em>Physics Today</em>.</figcaption>
+    </figure>
+
+    <p>In <a href="../part-1/">Part 1</a> of our <em>Diffusion Without Equations</em> series we looked at the history of diffusion imaging. Here we develop the intuition behind a diffusion MRI sequence. The key underlying concept of diffusion imaging is based on the interaction of water molecules with their local environment; by measuring the magnitude and direction of water motion, information on the tissue microstructure can be inferred. If we know the duration of the diffusion gradients, the MRI signal decay can provide information on the displacement of the water molecules.</p>
+
+    <p>To visualize the process of diffusion MRI we introduce an analogy involving track runners. Let’s think of the individual water molecules as different runners (blue dots) in separate lanes, mirroring the famous Hahn spin echo analogy first described in his landmark 1953 <em>Physics Today</em> paper (Figure 1). To simplify the analogy, we assume that all of the runners run on a straight track at an equal pace. The runners, however, are not on a normal track; instead, each lane is a treadmill, whose speed (gradient strength <i>G</i>) and duration of activation (gradient duration <i>δ</i>) can be controlled by an operator (MR user). This treadmill is analogous to the diffusion gradients in a Stejskal-Tanner pulsed gradient spin echo sequence. In our analogy, we describe the extent of diffusion (diffusion coefficient slider) as runners moving into a neighboring lane randomly. The higher the diffusion coefficient, the greater the number of runners switching lanes. When the runners move into another lane, their speed is changed to the speed of the treadmill they moved into.</p>
+  </article>
+
+  <figure class="embed-wide">
+    <div class="scale-frame" data-width="1300" data-height="720">
+      <iframe src="https://tommyboshkovski.github.io/diffusion-animation/" title="Interactive diffusion MRI runner animation" scrolling="no" loading="lazy"></iframe>
+    </div>
+    <figcaption class="embed-caption">Interactive animation by Tommy Boshkovski. On a small screen, <a href="https://tommyboshkovski.github.io/diffusion-animation/">open the animation in its own page</a>.</figcaption>
+  </figure>
+
+  <article class="prose">
+    <p>At the sound of the starting pistol (start button), the runners take off (point A), analogous to how spins are flipped into the transverse plane at the application of a 90º pulse. This animation can illustrate how the diffusion-weighted signal is captured either with 180º refocusing pulses (SE button) or without them (GRE button). We will first consider the SE scenario, which corresponds to the original Stejskal-Tanner sequence.</p>
+
+    <h2>Spin echo (SE) sequence</h2>
+
+    <p>In the SE sequence, a pair of bipolar gradients (with varying strength and duration but same polarity) is placed around the 180º refocusing pulse. When the gradient is turned on (point B), phase dispersion is introduced to the spins (treadmill starts moving). This dispersion depends on the runner’s location, i.e. the runners at the edges of the race track experience a stronger magnetic field (treadmills move faster), whereas those toward the center move slower. This causes the distance between runners to grow. At the application of the 180º refocusing pulse (point D), the entire track flips, and the runners’ positions are now mirrored. When no diffusion is present (diffusion coefficient slider set to minimum), after the 180º pulse the slowest runner would be leading the race, and the faster ones would be further away from the finish line. The application of the second bipolar gradient (point E) would cancel out the dispersion caused by the first, allowing all runners to finish the race at the same time. In a real MRI experiment, this means that phase accrual from the first diffusion gradient would be completely reversed by the second gradient, and there would be no signal decay (picky point for the hardcore physicist: we are ignoring T2 relaxation).</p>
+
+    <p>Now let’s see what happens when diffusion does occur. To do that, we need to drag the diffusion coefficient slider to the right. The runners are now randomly changing treadmills, and their speed changes if the gradient <i>G</i> is non-zero. They move faster if they diffuse toward the edges, or slower if they diffuse toward the center. Through a series of lane shifts, which could happen before or after the 180º pulse (point D), at the end of the race some runners will be ahead and some will be behind the finish line. These are the runners that produce a signal loss due to diffusion, as they are out of sync with the runners at the finish line.</p>
+
+    <h2>Gradient echo (GRE) sequence</h2>
+
+    <p>Diffusion can also be observed without a 180º pulse, using only a gradient echo sequence. In this case however, the two diffusion gradients need to be of opposing polarity to enable rephasing. Without diffusion, just like in the SE case, the runners will all reach the finish line at the same time, and no signal will be lost. However, with diffusion, the runners cross the finish line at different times, resulting in imperfect refocusing.</p>
+
+    <h2>So where does the b-value come from?</h2>
+
+    <p>So, ever wondered why diffusion weighting is described by a quantity called a b-value? Well, the name comes from Denis Le Bihan, who first described it. The quantity itself comes from a combination of the gradient strength and timing. Play around with the parameters in the simulation to see what happens with the b-value. Increase the gradient duration <i>δ</i> or diffusion time <i>Δ</i>, and the b-value goes up. Increase <i>G</i>, and the b-value also goes up. The higher the b-value, the stronger the diffusion effect! Note that while the diffusion coefficient doesn’t affect the b-value, it does affect the diffusion-weighted signal. The default setting is with the highest possible b-value (which is on a scale from 0 to 1 for demonstration purposes) and with no diffusion present. Have fun!</p>
+
+    <p class="ack">Acknowledgement: We thank Will Grissom for his JavaScript advice, and Denis Le Bihan and Joseph Ackerman for their feedback during the early stages of the diffusion animation.</p>
+  </article>
+
+  <nav class="series-nav" aria-label="Series navigation">
+    <a class="prev" href="../part-1/"><small>Previous</small><span>Part 1: The beginning</span></a>
+    <a class="next" href="../survey/"><small>Next</small><span>Interlude: the community survey</span></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>Originally published on ISMRM's <em>MR Pulse</em> blog, 2017–2018. Restored and maintained by <a href="https://qmrlab.org">qMRLab</a>.</p>
+    <p><a href="https://github.com/qMRLab/diffusion-without-equations">Source on GitHub</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

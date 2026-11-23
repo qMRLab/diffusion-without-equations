@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An Interactive Course on Diffusion MRI | qMRLab</title>
+  <meta name="description" content="Six ISMRM lectures on diffusion MRI, from acquisition to tractography and microstructure modelling, with 29 quiz questions linked to the exact moment in each video.">
+  <meta property="og:title" content="… and now for some equations: An interactive course on diffusion MRI">
+  <meta property="og:image" content="https://qmrlab.org/diffusion-without-equations/assets/img/course-hero.png">
+  <link rel="icon" href="../assets/img/qmrlab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../"><img src="../assets/img/qmrlab-icon.png" alt=""><span>Diffusion Without Equations<small>a qMRLab series</small></span></a>
+    <nav class="site-nav" aria-label="Series">
+      <a href="../part-1/">Part 1</a>
+      <a href="../part-2/">Part 2</a>
+      <a href="../part-3/">Part 3</a>
+      <a href="../course/" aria-current="page">Course</a>
+      <a href="https://qmrlab.org">qmrlab.org</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <header class="post-header">
+    <p class="kicker">Diffusion Without Equations &middot; Epilogue</p>
+    <h1>&hellip; and now for some equations: an interactive course on diffusion MRI</h1>
+    <p class="meta">Originally published April 3, 2018 on ISMRM's <em>MR Pulse</em> blog</p>
+  </header>
+
+  <article class="prose">
+    <p>In two previous blog posts (<em>Diffusion Without Equations</em> Parts <a href="../part-1/">I</a> and <a href="../part-2/">II</a>), we described the basics of diffusion MRI qualitatively. We have now developed a larger course for MR scientists interested in an introduction to diffusion MRI. The course consists of six lectures (plus one bonus lecture) taken from various educational sessions held at ISMRM meetings around the world. The course was put together in collaboration with the ISMRM Education Committee, and you can watch it in its entirety below.</p>
+
+    <p>Diffusion MRI spans a great amount of territory, from large-scale neuronal connectivity (tractography) to detailed description of neuronal microstructure, tumor microstructure, and more. This course covers the methodology used for these applications, as well as acquisition and pre-processing of diffusion MRI data.</p>
+
+    <p>Historically, the development of the methodology used for tractography and microstructure has been somewhat separate, and at the most recent ISMRM annual meeting in Honolulu, the diffusion study group was described as an uneasy marriage between tractography and microstructure. We would contend that it is a marriage that keeps getting better and better, with the spouses increasingly combining their strengths to perform analysis such as microstructure-informed tractography. Let us propose that Els Fieremans, Karla Miller, Alexander Leemans, Maxime Descoteaux, Ileana Jelescu, and Daniel Alexander, together with many other contributors to this field, have been valuable marriage counselors. Let’s hear what they have to say!</p>
+
+    <figure>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLn7IkIr4oxvpqZGOojEE6Qg7IaVKSmp8e&amp;rel=0" title="ISMRM diffusion educational playlist" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <figcaption>The full course as a YouTube playlist. <a href="https://www.youtube.com/playlist?list=PLn7IkIr4oxvpqZGOojEE6Qg7IaVKSmp8e">Open it on YouTube</a>.</figcaption>
+    </figure>
+
+    <h2>Test yourself</h2>
+    <p>Do you think you already know this stuff? Then try the interactive quiz below! The questions also serve as course annotations, so casual readers can find out which topics are addressed in the course. Open a question to answer it, then load the video, which starts at the exact moment where the topic is discussed. Or you can just try to answer without watching the video, and see if you got it right.</p>
+  </article>
+
+  <section class="lecture" id="els-fieremans">
+    <p class="lecture-num">Lecture 1</p>
+    <h2>Introduction to Diffusion MRI</h2>
+    <p class="lecture-by">Els Fieremans &middot; <a href="https://www.youtube.com/watch?v=wetaaYAa8bE">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q809">
+        <details>
+          <summary><span class="qnum">1.</span> In biological tissue, for a very short time scale (a few ms), the diffusion of the water molecules can be described as:</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) Isotropic and Gaussian</button>
+              <button type="button" class="answer">b) Anisotropic and Gaussian</button>
+              <button type="button" class="answer">c) Isotropic and non-Gaussian</button>
+              <button type="button" class="answer">d) Anisotropic and non-Gaussian</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="wetaaYAa8bE" data-start="377"><button type="button" class="load-video">&#9654; Watch where this is discussed (Fieremans, 6:17)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q816">
+        <details>
+          <summary><span class="qnum">2.</span> Which of the following statements is true about the diffusion of water molecules in the brain, over a timescale of roughly 50 ms?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) The diffusion is anisotropic, i.e., relatively fast parallel compared to perpendicular to the fibers, in the white matter</button>
+              <button type="button" class="answer">b) The diffusion is isotropic in both gray and white matter</button>
+              <button type="button" class="answer">c) The diffusion is relatively isotropic in the gray matter compared to the white matter</button>
+              <button type="button" class="answer" data-correct="true">a) and c)</button>
+              <button type="button" class="answer">None of the above</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="wetaaYAa8bE" data-start="929"><button type="button" class="load-video">&#9654; Watch where this is discussed (Fieremans, 15:29)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q818">
+        <details>
+          <summary><span class="qnum">3.</span> Which parameter should be changed to increase the diffusion length/displacement being probed in a diffusion MRI experiment?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Echo Time (TE)</button>
+              <button type="button" class="answer" data-correct="true">b) Diffusion time (Delta)</button>
+              <button type="button" class="answer">c) Gradient strength (G)</button>
+              <button type="button" class="answer">d) None of the above</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="wetaaYAa8bE" data-start="511"><button type="button" class="load-video">&#9654; Watch where this is discussed (Fieremans, 8:31)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q819">
+        <details>
+          <summary><span class="qnum">4.</span> How will the log of the normalized diffusion weighted signal change if the diffusion sensitizing gradient strength is doubled?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) It will increase by a factor of 2</button>
+              <button type="button" class="answer" data-correct="true">b) It will decrease by a factor of 4</button>
+              <button type="button" class="answer">c) It will decrease by a factor of 2</button>
+              <button type="button" class="answer">d) It will increase by a factor of 4</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="wetaaYAa8bE" data-start="511"><button type="button" class="load-video">&#9654; Watch where this is discussed (Fieremans, 8:31)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q820">
+        <details>
+          <summary><span class="qnum">5.</span> What is the relationship between the b-value and the resolution of the displacement distribution estimated with q-space techniques?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) They are not related</button>
+              <button type="button" class="answer">b) They are equal</button>
+              <button type="button" class="answer" data-correct="true">c) They are related by a simple mathematical equation</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="wetaaYAa8bE" data-start="777"><button type="button" class="load-video">&#9654; Watch where this is discussed (Fieremans, 12:57)</button></div>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <section class="lecture" id="karla-miller">
+    <p class="lecture-num">Lecture 2</p>
+    <h2>What Is Your Sequence?</h2>
+    <p class="lecture-by">Karla Miller &middot; <a href="https://www.youtube.com/watch?v=zmFQUBJWPRg">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q1090">
+        <details>
+          <summary><span class="qnum">1.</span> What is the key effect that creates diffusion weighted MR contrast?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) Magnetization dephasing caused by discrepancies in the magnetic field seen by different spins</button>
+              <button type="button" class="answer">b) Average signal phase induced by discrepancies in the radio frequency (RF) pulse series</button>
+              <button type="button" class="answer">c) Average signal phase induced by the magnetic field gradients</button>
+              <button type="button" class="answer">d) Magnetization dephasing caused by discrepancies in the relaxation time of different spins</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="zmFQUBJWPRg" data-start="160"><button type="button" class="load-video">&#9654; Watch where this is discussed (Miller, 2:40)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q859">
+        <details>
+          <summary><span class="qnum">2.</span> Which of the following are advantages of single shot echo planar imaging (ss-EPI)?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) It produces images with high resolution and few distortions</button>
+              <button type="button" class="answer">b) It is fast</button>
+              <button type="button" class="answer">c) It freezes the motion</button>
+              <button type="button" class="answer">a) and b)</button>
+              <button type="button" class="answer">a) and c)</button>
+              <button type="button" class="answer" data-correct="true">b) and c)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="zmFQUBJWPRg" data-start="1695"><button type="button" class="load-video">&#9654; Watch where this is discussed (Miller, 28:15)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q860">
+        <details>
+          <summary><span class="qnum">3.</span> How can one significantly reduce the scan time in diffusion imaging without sacrificing the contrast or the volumetric coverage?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) By doing single-slice excitation</button>
+              <button type="button" class="answer" data-correct="true">b) By doing simultaneous multi-slice excitation</button>
+              <button type="button" class="answer">c) By reducing the gradient duration</button>
+              <button type="button" class="answer">d) By reducing the diffusion time</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="zmFQUBJWPRg" data-start="2069"><button type="button" class="load-video">&#9654; Watch where this is discussed (Miller, 34:29)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q856">
+        <details>
+          <summary><span class="qnum">4.</span> How does the time between the second and the third 90° radiofequency (RF) pulses in a stimulated echo sequence affect the diffusion time dependent contrast?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) The contrast decays as the time between the two 90° RF pulses increase</button>
+              <button type="button" class="answer" data-correct="true">b) The contrast is being accumulated during the time between the two 90° RF pulses</button>
+              <button type="button" class="answer">c) The contrast is not affected by the time between the two 90° RF pulses</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="zmFQUBJWPRg" data-start="869"><button type="button" class="load-video">&#9654; Watch where this is discussed (Miller, 14:29)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q858">
+        <details>
+          <summary><span class="qnum">5.</span> Why is the steady state free precession (SSFP) sequence good for diffusion imaging of tissues with short T2?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) Because of the short TR</button>
+              <button type="button" class="answer">b) Because the duration of the diffusion gradients is short</button>
+              <button type="button" class="answer">c) Because of the inherent T1/T2 contrast of SSFP</button>
+              <button type="button" class="answer">d) Because it does not require navigator echoes to image tissue in vivo</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="zmFQUBJWPRg" data-start="1309"><button type="button" class="load-video">&#9654; Watch where this is discussed (Miller, 21:49)</button></div>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <section class="lecture" id="alexander-leemans">
+    <p class="lecture-num">Lecture 3</p>
+    <h2>Analysis Pipelines for Diffusion MRI Data: From Voxels to Connectomes</h2>
+    <p class="lecture-by">Alexander Leemans &middot; <a href="https://www.youtube.com/watch?v=3z9IixVVGPQ">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q844">
+        <details>
+          <summary><span class="qnum">1.</span> How is the signal intensity drift in dMRI data best corrected?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) By low-degree polynomial fitting of the b0 images</button>
+              <button type="button" class="answer" data-correct="true">b) By low-degree polynomial fitting of the b0 and the diffusion weighted images</button>
+              <button type="button" class="answer">c) By high-degree polynomial fitting of the b0 images</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="3z9IixVVGPQ" data-start="210"><button type="button" class="load-video">&#9654; Watch where this is discussed (Leemans, 3:30)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q846">
+        <details>
+          <summary><span class="qnum">2.</span> When correcting for subject motion in diffusion MRI data, which processing step should be included to prevent a bias?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) Rotation of the b-matrix</button>
+              <button type="button" class="answer">b) Recalibration of the b-values</button>
+              <button type="button" class="answer">c) Normalization of the non-diffusion-weighted signal intensity</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="3z9IixVVGPQ" data-start="371"><button type="button" class="load-video">&#9654; Watch where this is discussed (Leemans, 6:11)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q847">
+        <details>
+          <summary><span class="qnum">3.</span> How does the size of a tract passing close to the grey matter or the ventricles determine the extent of the confound caused by partial voluming, for statistics computed for the entire tract volume?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Bigger (in diameter) tracts are more affected</button>
+              <button type="button" class="answer" data-correct="true">b) Bigger (in diameter) tracts are less affected</button>
+              <button type="button" class="answer">d) The size is irrelevant to the extent of this confound.</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="3z9IixVVGPQ" data-start="809"><button type="button" class="load-video">&#9654; Watch where this is discussed (Leemans, 13:29)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q848">
+        <details>
+          <summary><span class="qnum">4.</span> Which of the following could bias the Tract-based spatial statistics (TBSS) analysis?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) The skeletonization by projection might miss the pathology</button>
+              <button type="button" class="answer">b) Complex subvoxel fiber geometry</button>
+              <button type="button" class="answer">c) Motion</button>
+              <button type="button" class="answer" data-correct="true">d) All of the above</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="3z9IixVVGPQ" data-start="1040"><button type="button" class="load-video">&#9654; Watch where this is discussed (Leemans, 17:20)</button></div>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <section class="lecture" id="maxime-descoteaux">
+    <p class="lecture-num">Lecture 4</p>
+    <h2>Diffusion Tractography: Principles &amp; Methods</h2>
+    <p class="lecture-by">Maxime Descoteaux &middot; <a href="https://www.youtube.com/watch?v=HkdYYRI8dxE">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q849">
+        <details>
+          <summary><span class="qnum">1.</span> How often does more than one fiber orientation occupy a white matter voxel in a diffusion MRI acquisition with 2 mm isotropic voxel size?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) less than 10%</button>
+              <button type="button" class="answer">b) 10%-50%</button>
+              <button type="button" class="answer" data-correct="true">c) 50%-90%</button>
+              <button type="button" class="answer">e) more than 90%</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="HkdYYRI8dxE" data-start="251"><button type="button" class="load-video">&#9654; Watch where this is discussed (Descoteaux, 4:11)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q850">
+        <details>
+          <summary><span class="qnum">2.</span> What is the recommended step size and the order of interpolation for tractography?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) 1/10 of the voxel grid and low order interpolation</button>
+              <button type="button" class="answer">b) 1/2 of the voxel grid and low order interpolation</button>
+              <button type="button" class="answer" data-correct="true">c) 1/10 of the voxel grid and higher order interpolation</button>
+              <button type="button" class="answer">d) 1/2 of the voxel grid and higher order interpolation</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="HkdYYRI8dxE" data-start="589"><button type="button" class="load-video">&#9654; Watch where this is discussed (Descoteaux, 9:49)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q852">
+        <details>
+          <summary><span class="qnum">3.</span> What is the main drawback of probabilistic tracking?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) It produces more invalid connections in comparison to deterministic approaches</button>
+              <button type="button" class="answer">b) It cannot track highly curved structures</button>
+              <button type="button" class="answer">c) It is not reproducible</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="HkdYYRI8dxE" data-start="1149"><button type="button" class="load-video">&#9654; Watch where this is discussed (Descoteaux, 19:09)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q853">
+        <details>
+          <summary><span class="qnum">4.</span> Which structures will be over-represented if the tractography is seeded from every voxel in the brain white matter?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Large and short bundles</button>
+              <button type="button" class="answer">b) Thin and long bundles</button>
+              <button type="button" class="answer">c) Thin and short bundles</button>
+              <button type="button" class="answer" data-correct="true">d) Large and long bundles</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="HkdYYRI8dxE" data-start="1239"><button type="button" class="load-video">&#9654; Watch where this is discussed (Descoteaux, 20:39)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q854">
+        <details>
+          <summary><span class="qnum">5.</span> The seeding bias can be overcome by:</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Including anatomical priors</button>
+              <button type="button" class="answer">b) Seeding from the grey-white matter interface</button>
+              <button type="button" class="answer">c) Particle filtering tractography</button>
+              <button type="button" class="answer" data-correct="true">All of the above</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="HkdYYRI8dxE" data-start="1292"><button type="button" class="load-video">&#9654; Watch where this is discussed (Descoteaux, 21:32)</button></div>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <section class="lecture" id="ileana-jelescu">
+    <p class="lecture-num">Lecture 5</p>
+    <h2>Diffusion Analysis: Tissue &amp; Signal Models</h2>
+    <p class="lecture-by">Ileana Jelescu &middot; <a href="https://www.youtube.com/watch?v=ZeACA4YYSuU">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q1116">
+        <details>
+          <summary><span class="qnum">1.</span> Which of the following is a main advantage of the tissue models over the signal models?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) Tissue models have higher specificity</button>
+              <button type="button" class="answer">b) Tissue models have higher sensitivity</button>
+              <button type="button" class="answer">c) The tissue models are applicable to any type of tissue</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="ZeACA4YYSuU" data-start="55"><button type="button" class="load-video">&#9654; Watch where this is discussed (Jelescu, 0:55)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q1118">
+        <details>
+          <summary><span class="qnum">2.</span> What is the maximum b-value that is suitable for use in signal models derived from the second order Taylor expansion of bD in healthy brain?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) 1500</button>
+              <button type="button" class="answer" data-correct="true">b) 2500</button>
+              <button type="button" class="answer">c) 3500</button>
+              <button type="button" class="answer">c) 4500</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="ZeACA4YYSuU" data-start="172"><button type="button" class="load-video">&#9654; Watch where this is discussed (Jelescu, 2:52)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q1119">
+        <details>
+          <summary><span class="qnum">3.</span> Which of the following could be a consequence of fixed parallel diffusivity parameters in a multi-compartment model?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Biased volume fractions.</button>
+              <button type="button" class="answer">b) The intra-axonal compartment will appear less anisotropic than the extra-axonal compartment.</button>
+              <button type="button" class="answer">c) Reduced specificity.</button>
+              <button type="button" class="answer">a) and b)</button>
+              <button type="button" class="answer" data-correct="true">a) and c)</button>
+              <button type="button" class="answer">b) and c)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="ZeACA4YYSuU" data-start="737"><button type="button" class="load-video">&#9654; Watch where this is discussed (Jelescu, 12:17)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q1120">
+        <details>
+          <summary><span class="qnum">4.</span> Which of the following has been suggested by the diffusion MRI literature?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) The parallel diffusivity in the intra-axonal compartment is less than the parallel diffusivity in the extra-axonal compartment.</button>
+              <button type="button" class="answer">b) The parallel diffusivity in the intra-axonal compartment is greater than the parallel diffusivity in the extra-axonal compartment</button>
+              <button type="button" class="answer">c) The parallel diffusivity in the intra-axonal compartment is equal to the parallel diffusivity in the extra-axonal compartment.</button>
+              <button type="button" class="answer" data-correct="true">d) All of the above</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="ZeACA4YYSuU" data-start="1500"><button type="button" class="load-video">&#9654; Watch where this is discussed (Jelescu, 25:00)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q1121">
+        <details>
+          <summary><span class="qnum">5.</span> What is a general feature of the two compartment models?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) The estimates of the parameters have two solutions</button>
+              <button type="button" class="answer">b)  The estimates of the parameters have only one solution</button>
+              <button type="button" class="answer">c) The two compartment models are used only in grey matter</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="ZeACA4YYSuU" data-start="984"><button type="button" class="load-video">&#9654; Watch where this is discussed (Jelescu, 16:24)</button></div>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <section class="lecture" id="daniel-alexander">
+    <p class="lecture-num">Lecture 6</p>
+    <h2>Diffusion Modelling: Signal Models vs. Biophysical Models</h2>
+    <p class="lecture-by">Daniel Alexander &middot; <a href="https://www.youtube.com/watch?v=KN4Xr5_Yix0">Watch the full lecture on YouTube</a></p>
+    <ol class="quiz-list">
+      <li class="quiz" id="q862">
+        <details>
+          <summary><span class="qnum">1.</span> Which of the following metrics, derived from the reconstructed diffusion propagator, would be indicative of anisotropy?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Return to origin probability</button>
+              <button type="button" class="answer" data-correct="true">b) Angular variance</button>
+              <button type="button" class="answer">c) Mean displacement</button>
+              <button type="button" class="answer">d) Radial variance</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="KN4Xr5_Yix0" data-start="298"><button type="button" class="load-video">&#9654; Watch where this is discussed (Alexander, 4:58)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q863">
+        <details>
+          <summary><span class="qnum">2.</span> Which of these entities can characterize departure of the signal from a single Gaussian?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) Diffusion kurtosis</button>
+              <button type="button" class="answer">b) The diffusion tensor</button>
+              <button type="button" class="answer">c) The high angular resolution ADC profile</button>
+              <button type="button" class="answer">d) Anomalous diffusion parameters</button>
+              <button type="button" class="answer">e) Bi-exponential models</button>
+              <button type="button" class="answer">f) Mean diffusivity</button>
+              <button type="button" class="answer" data-correct="true">a) , c), d) and e)</button>
+              <button type="button" class="answer">b) , c), d) and f)</button>
+              <button type="button" class="answer">a) , c), e) and f)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="KN4Xr5_Yix0" data-start="415"><button type="button" class="load-video">&#9654; Watch where this is discussed (Alexander, 6:55)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q864">
+        <details>
+          <summary><span class="qnum">3.</span> Which of the following parameters are estimated by the AxCaliber model, but not by the Neurite Orientation Dispersion and Density Imaging (NODDI) model?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">a) It estimates the axon diameter</button>
+              <button type="button" class="answer">b) It models the distribution of the myelin content wrapped around the axon</button>
+              <button type="button" class="answer">c) It models the the hindered and the restricted diffusion compartments</button>
+              <button type="button" class="answer">d) It estimates the diffusivity</button>
+              <button type="button" class="answer">e) It estimates the orientation dispersion</button>
+              <button type="button" class="answer">c) and d)</button>
+              <button type="button" class="answer">a) and c)</button>
+              <button type="button" class="answer">a) and  e)</button>
+              <button type="button" class="answer" data-correct="true">a) and d)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="KN4Xr5_Yix0" data-start="1079"><button type="button" class="load-video">&#9654; Watch where this is discussed (Alexander, 17:59)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q865">
+        <details>
+          <summary><span class="qnum">4.</span> What assumption is made by some diffusion models to aid in distinguishing the intra-axonal from the extra-axonal space?</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer" data-correct="true">a) The axons are modelled as sticks with zero diffusivity perpendicular to the stick direction</button>
+              <button type="button" class="answer">b) The axons are modelled as sticks with zero diffusivity parallel to the stick direction</button>
+              <button type="button" class="answer">c) The anisotropy of the extra-axonal space is assumed to be higher than that of the intra-axonal space</button>
+              <button type="button" class="answer">d) The diffusivity perpendicular to the stick direction is assumed to be equal to that of cerebrospinal fluid (CSF)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+            <div class="video-slot" data-video="KN4Xr5_Yix0" data-start="1456"><button type="button" class="load-video">&#9654; Watch where this is discussed (Alexander, 24:16)</button></div>
+          </div>
+        </details>
+      </li>
+      <li class="quiz" id="q866">
+        <details>
+          <summary><span class="qnum">5.</span> Rank the models in ascending order, with respect to their complexity (number of parameters):</summary>
+          <div class="quiz-body">
+            <div class="answers" role="group" aria-label="Answer options">
+              <button type="button" class="answer">1. Diffusion Tensor Imaging (DTI);<br>2. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>3. Bi-exponential;<br>4. Diffusion Kurtosis Imaging (DKI);<br>5. Apparent Diffusion Coefficient (ADC)</button>
+              <button type="button" class="answer" data-correct="true">1. Apparent Diffusion Coefficient (ADC);<br>2. Bi-exponential;<br>3. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>4. Diffusion Tensor Imaging (DTI);<br>5. Diffusion Kurtosis Imaging (DKI)</button>
+              <button type="button" class="answer">1. Bi-exponential;<br>2. Apparent Diffusion Coefficient (ADC);<br>3. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>4. Diffusion Tensor Imaging (DTI);<br>5. Diffusion Kurtosis Imaging (DKI)</button>
+              <button type="button" class="answer">1. Diffusion Kurtosis Imaging (DKI);<br>2. Diffusion Tensor Imaging (DTI);<br>3. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>4. Apparent Diffusion Coefficient (ADC);<br>5. Bi-exponential</button>
+              <button type="button" class="answer">1. Apparent Diffusion Coefficient (ADC);<br>2. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>3. Bi-exponential;<br>4. Diffusion Tensor Imaging (DTI);<br>5. Diffusion Kurtosis Imaging (DKI)</button>
+              <button type="button" class="answer">1. Apparent Diffusion Coefficient (ADC);<br>2. Neurite Orientation Dispersion and Density Imaging (NODDI);<br>3. Diffusion Tensor Imaging (DTI);<br>4. Bi-exponential;<br>5. Diffusion Kurtosis Imaging (DKI)</button>
+            </div>
+            <p class="feedback" aria-live="polite"></p>
+          </div>
+        </details>
+      </li>
+    </ol>
+  </section>
+
+  <div class="scorebar" hidden>
+    <span class="score-text"></span>
+    <button type="button">Reset quiz</button>
+  </div>
+
+  <article class="prose">
+    <p>Now that you are done, we would love to get your feedback! Feel free to discuss the current questions, or even better, contribute new ones, by <a href="https://github.com/qMRLab/diffusion-without-equations/issues">opening an issue on GitHub</a>. It doesn’t matter whether you are an expert or a novice, your knowledge (or lack thereof) could contribute to a fun experiment in crowdsourcing MR educational content. Our aim is to explore new ways to educate MR scientists. If successful, this kind of course structure may be considered for CME credit in the future.</p>
+    <h2>Bonus: an interview with John Tanner</h2>
+    <p>For a historical perspective on the field, we highly recommend the interview that Derek Jones conducted with John Tanner for the 2017 edition of the <a href="https://www.ismrm.org/MRM/mrmh_low-res_324b.pdf">MRM Highlights magazine</a>.</p>
+    <figure>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/ixu6I7eJZEc?rel=0" title="Dr John Tanner interview" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <figcaption>Dr. John Tanner interview, Cardiff University.</figcaption>
+    </figure>
+  </article>
+
+  <nav class="series-nav" aria-label="Series navigation">
+    <a class="prev" href="../part-3/"><small>Previous</small><span>Part 3: The future of diffusion MRI</span></a>
+    <a class="next" href="../"><small>Back to</small><span>The series overview</span></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>Originally published on ISMRM's <em>MR Pulse</em> blog, 2017–2018. Restored and maintained by <a href="https://qmrlab.org">qMRLab</a>.</p>
+    <p><a href="https://github.com/qMRLab/diffusion-without-equations">Source on GitHub</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
